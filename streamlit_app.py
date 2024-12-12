@@ -7,7 +7,7 @@ file_path = 'OIL_PRICE_OF_SEOUL_KOREA_DATASET.csv'  # 데이터셋 경로 수정
 oil_price_data = pd.read_csv(file_path)
 
 # GPT API 설정
-openai_api_key = ""  # OpenAI API 키를 입력하세요
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=openai_api_key)
 
 # Streamlit 설정
